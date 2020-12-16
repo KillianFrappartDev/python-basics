@@ -6,5 +6,27 @@ tech_dictionnary = {
 }
 
 # Retrieve data
+tech_dictionnary["Node"]
 
-print(tech_dictionnary["Node"])
+# Add data
+tech_dictionnary["SQL"] = "Query language used to build databases."
+
+# Remove data
+tech_dictionnary.pop("React")
+
+# Copy a dictionnary
+copied_dictionnary = tech_dictionnary.copy()
+
+# Declared in the global context
+API_KEY = "ABCDEF1234"
+
+
+def demo():
+    global API_KEY
+    API_KEY = "CHANGED"
+
+
+# Changed
+print(API_KEY)
+demo()
+print(API_KEY)
