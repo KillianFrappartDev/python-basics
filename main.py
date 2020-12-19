@@ -30,3 +30,31 @@ def demo():
 print(API_KEY)
 demo()
 print(API_KEY)
+
+print("C++" in tech_dictionnary)
+
+# OOP
+
+
+class Car:
+
+    # Constructor
+    def __init__(self, color):
+
+        # Àttributes
+        self.color = color
+
+    # Methods
+    def info(self):
+        print(self.color)
+
+
+car = Car("Red")
+
+car.info()
+
+print(repr(car))
+
+import SomePackage
+
+print(SomePackage)
