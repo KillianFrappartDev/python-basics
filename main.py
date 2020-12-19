@@ -53,8 +53,10 @@ car = Car("Red")
 
 car.info()
 
-print(repr(car))
+# Packages
+# python3 -m venv .venv
+# source .venv/bin/activate
 
-import SomePackage
+import heroes
 
-print(SomePackage)
+print(heroes.gen())
